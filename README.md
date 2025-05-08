@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chess Game
+
+A modern chess game built with Next.js where you can play against a simple AI opponent. The game features a responsive design, piece movement validation, and game state tracking including check and checkmate detection.
+
+## Features
+
+- Interactive chessboard with drag-and-drop piece movement
+- Valid move highlighting and validation
+- Check and checkmate detection
+- Simple AI opponent
+- Responsive design for mobile and desktop
+- Beautiful chess piece Unicode symbols
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (version 14.0 or higher)
+- [npm](https://www.npmjs.com/) (usually comes with Node.js)
 
 ## Getting Started
 
-First, run the development server:
-
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone [your-repository-url]
+cd chess_game
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install the dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to start playing!
 
-## Learn More
+## How to Play
 
-To learn more about Next.js, take a look at the following resources:
+1. You play as White (bottom pieces)
+2. Click on a piece to select it
+3. Click on a valid destination square to move the piece
+4. The AI (Black) will automatically make its move
+5. Try to checkmate the AI's king while protecting your own!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Game Rules
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Standard chess rules apply
+- Pawns can move forward one square (or two on their first move)
+- Pawns capture diagonally
+- Knights move in L-shapes
+- Bishops move diagonally
+- Rooks move horizontally and vertically
+- Queens can move in any direction
+- Kings move one square in any direction
+- The game ends when either king is checkmated
 
-## Deploy on Vercel
+## Technologies Used
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Next.js](https://nextjs.org/) - React framework
+- React Hooks for state management
+- CSS Modules for styling
+- Unicode chess symbols for pieces
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
